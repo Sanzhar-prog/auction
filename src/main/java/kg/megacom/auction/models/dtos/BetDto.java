@@ -7,5 +7,5 @@ public class BetDto {
 
     private Long id;
     private LotDto lotDto;
-    private UserDto userDto;
+    private CustomerDto customerDto;
 }

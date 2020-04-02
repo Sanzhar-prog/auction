@@ -3,7 +3,7 @@ package kg.megacom.auction.models.dtos;
 import lombok.Data;
 
 @Data
-public class UserDto {
+public class CustomerDto {
 
     private Long id;
     private String name;

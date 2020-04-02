@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Data
+@Table(name = "bets")
 public class Bet {
 
     @Id
@@ -17,6 +18,6 @@ public class Bet {
     private Lot lot;
     @OneToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private Customer customer;
 
 }

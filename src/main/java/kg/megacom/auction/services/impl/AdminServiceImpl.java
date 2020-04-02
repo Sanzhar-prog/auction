@@ -17,7 +17,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public LotDto createLot(LotDto lotDto) {
         Lot lot = ClassMapper.INSTANCE.lotDtoToLot(lotDto);
-        lotRepo.save(lot);
+        lot = lotRepo.save(lot);
         return ClassMapper.INSTANCE.lotToLotDto(lot);
     }
 }
